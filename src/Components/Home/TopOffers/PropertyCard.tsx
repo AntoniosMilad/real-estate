@@ -16,6 +16,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
+import Link from "next/link";
 
 interface PropertyCardProps {
   content: Property;
@@ -89,7 +90,9 @@ export default function PropertyCard({
       </div>
       <div className="p-[16px]">
         <div className="flex justify-between">
-          <h3 className="text-[#002E5D] font-bold">{Title}</h3>
+          <Link href={`/${encodeURIComponent(Title)}`}>
+            <h3 className="text-[#002E5D] font-bold">{Title}</h3>
+          </Link>
           <div className="bg-[#00152B] py-1 px-2 ml-2 rounded-[20px] flex flex-row items-center gap-2">
             <p className="text-white text-[12px]">{unitStatus}</p>
           </div>
