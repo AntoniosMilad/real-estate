@@ -67,7 +67,7 @@ export default function PlansDetails(props: {
       </article>
       <article>
         <p className="text-[#002E5D] text-[18px] font-bold">About Apartment</p>
-        <p className="my-3 w-full lg:w-[60%] text-black text-[15px] text-justify leading-[27px]">
+        <p className="my-3 w-full lg:w-[65%] text-black text-[15px] text-justify leading-[27px]">
           A 2 bedroom Apartment in ZED by Ora Developers. The Apartment size is
           127 m2 with 3 bathrooms and a terrace of 38 m2 . This property will be
           ready for delivery finished by 2028-01-01. Unique Selling Points of
@@ -84,7 +84,7 @@ export default function PlansDetails(props: {
           complex with a variety of physical activities. It also includes court
           rentals, academies, and many other services.
         </p>
-        <p className="my-3 w-full lg:w-[60%] text-black text-[15px] text-justify leading-[27px] lg:line-clamp-none line-clamp-6">
+        <p className="my-3 w-full lg:w-[65%] text-black text-[15px] text-justify leading-[27px] lg:line-clamp-none line-clamp-6">
           A 2 bedroom Apartment in ZED by Ora Developers. The Apartment size is
           127 m2 with 3 bathrooms and a terrace of 38 m2 . This property will be
           ready for delivery finished by 2028-01-01. Unique Selling Points of

@@ -81,7 +81,7 @@ export default function PropertyDetails({
                 <Image src={whats} alt="Bedrooms" width={25} height={15} />
               </div>
             </div>
-            <hr className="my-8" />
+            <hr className="my-5" />
             <div>
               <p className="text-[18px] text-black mb-2">
                 Ready to Invest Smartly?
