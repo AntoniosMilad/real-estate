@@ -4,7 +4,7 @@ import { properties, Property } from "@/data/properties";
 
 export default function TopOffers() {
   return (
-    <section className="px-[20px] w-full h-auto my-[117px] lg:px-[100px] max-w-[1920px] mx-auto">
+    <section className="px-[20px] w-full h-auto my-[50px] lg:my-[117px] lg:px-[100px] max-w-[1920px] mx-auto">
       <div className="mb-[32px] h-[76px] flex items-center ">
         <h3 className="text-[#00152B] text-[36px] font-bold">Offers we love</h3>
       </div>

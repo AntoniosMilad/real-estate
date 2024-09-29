@@ -10,8 +10,8 @@ export default function PropertySliderTwo() {
     "https://plus.unsplash.com/premium_photo-1682377521625-c656fc1ff3e1?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   ];
   return (
-    <section className="flex flex-row gap-6 w-full h-[600px] mb-10">
-      <div className="relative h-full w-[50%]">
+    <section className="flex flex-col lg:flex-row gap-6 w-full h-[600px] mb-10">
+      <div className="relative h-full w-full lg:w-[50%]">
         <Image
           src={sliderImages[0]}
           alt="Property image"
@@ -19,7 +19,7 @@ export default function PropertySliderTwo() {
           className="object-cover rounded-lg"
         />
       </div>
-      <div className="grid grid-cols-2 gap-6 w-[50%] h-full">
+      <div className="grid grid-cols-2 gap-6 w-full lg:w-[50%] h-full">
         <div className="relative h-full w-full">
           <Image
             src={sliderImages[1]}

@@ -9,24 +9,39 @@ import "swiper/css/navigation";
 
 export default function SuggestedProperties() {
   return (
-    <div className=" pb-2">
+    <div className="pb-2">
       <p className="text-[#002E5D] text-2xl mb-4 font-bold">
         Suggested Properties
       </p>
       <Swiper
-        slidesPerView={3}
         spaceBetween={30}
         className="w-full !h-full !px-2"
         navigation
+        breakpoints={{
+          320: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+          },
+          480: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          640: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+          },
+          1024: {
+            slidesPerView: 4,
+            spaceBetween: 40,
+          },
+        }}
         modules={[Navigation]}
       >
-        {properties.map((property: Property, idx: number) => {
-          return (
-            <SwiperSlide key={idx} className="!w-[25%] !h-[600px]">
-              <PropertyCard content={property} />
-            </SwiperSlide>
-          );
-        })}
+        {properties.map((property: Property, idx: number) => (
+          <SwiperSlide key={idx} className="!h-[600px]">
+            <PropertyCard content={property} />
+          </SwiperSlide>
+        ))}
       </Swiper>
     </div>
   );

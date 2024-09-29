@@ -5,7 +5,7 @@ import React, { ReactNode } from "react";
 export default function PropertyLayout({ children }: { children: ReactNode }) {
   return (
     <section className="">
-      <div className="px-[100px] max-w-[1920px] mx-auto">
+      <div className="lg:px-[100px] px-[20px] max-w-[1920px] mx-auto">
         <Navbar />
         {children}
       </div>

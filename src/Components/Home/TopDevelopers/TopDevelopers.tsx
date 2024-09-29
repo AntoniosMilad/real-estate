@@ -32,7 +32,7 @@ export default function TopDevelopers() {
             return (
               <div
                 key={idx}
-                className="bg-white w-[172px] h-[90px] flex justify-center items-center rounded-md hover:shadow-md hover:shadow-gray-400/30 m-2 transition-shadow duration-200 ease-linear"
+                className="bg-white lg:w-[172px] h-[90px] px-1 flex justify-center items-center rounded-md hover:shadow-md hover:shadow-gray-400/30 m-2 transition-shadow duration-200 ease-linear"
               >
                 <Image src={el.src} alt={el.src} width={140} height={32} />
               </div>

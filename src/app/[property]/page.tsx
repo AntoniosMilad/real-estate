@@ -35,7 +35,7 @@ export default function PropertyDetails({
         </p>
         <div className="w-full my-6">
           <div className="flex flex-row items-center gap-6">
-            <div className="flex justify-center items-center shadow-gray-300/30 shadow-lg rounded-full  w-[100px] h-[100px]">
+            <div className="flex justify-center items-center shadow-gray-300/30 shadow-lg rounded-full w-[130px] h-[70px]  lg:w-[100px] lg:h-[100px]">
               <div className="relative w-[100%] h-[30%]">
                 <Image
                   src={singleProperty?.DeveloperLogo as string}
@@ -45,7 +45,7 @@ export default function PropertyDetails({
               </div>
             </div>
             <div className="flex flex-col gap-1">
-              <p className="text-[#002E5D] text-2xl font-bold">
+              <p className="text-[#002E5D] lg:text-2xl font-bold">
                 Apartment for sale in {decodeURIComponent(params.property)} with
                 2 Bedrooms
               </p>
@@ -60,7 +60,7 @@ export default function PropertyDetails({
         </div>
         {/* <PropertySlider /> */}
         <PropertySliderTwo />
-        <div className="flex my-10 w-full">
+        <div className="flex lg:flex-row flex-col my-10 w-full">
           <PlansDetails singleProperty={singleProperty} />
           <div className="border-[1px] border-gray-200 rounded-md flex-grow h-[400px] flex flex-col p-5 shadow-md shadow-gray-300/30">
             <div className="py-1  rounded-[20px] bg-gray-200 mb-4 w-[100px] flex flex-row items-center gap-2">

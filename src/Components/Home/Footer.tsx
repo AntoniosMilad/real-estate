@@ -5,7 +5,7 @@ import cam from "@/assets/SVG/ivideo.svg";
 
 const Footer = () => {
   return (
-    <footer className="h-[70vh] lg:h-[573px] w-full">
+    <footer className="h-[100dvh] lg:h-[573px] w-full">
       <div className="relative w-full h-full">
         <div className="gradient-overlay" />
         <Image
@@ -18,36 +18,36 @@ const Footer = () => {
         />
         <article className="z-20 absolute w-full py-9">
           <div className="flex flex-col items-center w-full gap-9">
-            <p className="font-bold text-[30px] lg:text-[40px]">
+            <p className="font-bold text-[25px] lg:text-[40px]">
               Got Question? Chat or Call
             </p>
             <div className="flex lg:flex-row flex-wrap justify-center gap-6">
-              <div className="bg-white rounded-md flex gap-2 flex-col justify-center items-center w-[225px] h-[120px]">
+              <div className="bg-white rounded-md flex gap-2 flex-col justify-center items-center w-[140px] lg:w-[225px] h-[85px] lg:h-[120px]">
                 <Image src={cam} alt="whatsapp" width={40} height={40} />
                 <p className="text-[#002E5D]">Free Consultation</p>
               </div>
-              <div className="bg-[#f0fff2] rounded-md flex gap-2 flex-col justify-center items-center w-[225px] h-[120px]">
+              <div className="bg-[#f0fff2] rounded-md flex gap-2 flex-col justify-center items-center w-[140px] lg:w-[225px] h-[85px] lg:h-[120px]">
                 <Image src={whatsapp} alt="whatsapp" width={40} height={40} />
                 <p className="text-[#4CCA5B]">WhatsApp</p>
               </div>
-              <div className="bg-white rounded-md flex gap-2 flex-col justify-center items-center w-[225px] h-[120px]">
+              <div className="bg-white rounded-md flex gap-2 flex-col justify-center items-center w-[140px] lg:w-[225px] h-[85px] lg:h-[120px]">
                 <Image src={phone} alt="whatsapp" width={40} height={40} />
                 <p className="text-[#002E5D]">Phone</p>
               </div>
             </div>
-            <div className="bg-white w-full max-w-[75%] mx-auto h-[240px] overflow-y-scroll rounded-xl md:flex-row flex-col flex gap-6  p-8">
-              <div className="flex flex-col gap-6 w-[33%]">
+            <div className="bg-white w-full max-w-[80%] lg:max-w-[75%] mx-auto h-[380px] lg:h-[240px] overflow-y-scroll rounded-xl md:flex-row flex-col flex gap-6  p-8">
+              <div className="flex flex-col gap-6 w-full lg:w-[33%]">
                 <p className="text-[#005B5B] text-3xl">LOGO</p>
                 <p className="text-[#8C96A0]">
                   Lorem ipsum dolor sit amet consectetur. Arcu nulla eros
                   elementum massa eget nibh. Auctor posuere dui habitasse dictum
                 </p>
               </div>
-              <div className="flex flex-col gap-6 w-[40%]">
+              <div className="flex flex-col gap-6 w-full lg:w-[40%]">
                 <p className="text-[#000000] text-[20px] font-bold">
                   Navigation Links
                 </p>
-                <div className="flex gap-9">
+                <div className="flex gap-12 lg:gap-9">
                   <ol className="text-black list-disc list-inside">
                     <li>Home</li>
                     <li>About us</li>
