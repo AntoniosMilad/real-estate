@@ -5,7 +5,7 @@ import cam from "@/assets/SVG/ivideo.svg";
 
 const Footer = () => {
   return (
-    <footer className="h-[100dvh] lg:h-[573px] w-full">
+    <footer className="lg:h-[60dvh] h-[100dvh]  w-full">
       <div className="relative w-full h-full">
         <div className="gradient-overlay" />
         <Image
@@ -16,8 +16,8 @@ const Footer = () => {
           fill
           className="object-cover"
         />
-        <article className="z-20 absolute w-full py-9">
-          <div className="flex flex-col items-center w-full gap-9">
+        <article className="z-20 absolute w-full h-full py-9">
+          <div className="flex flex-col items-center justify-center h-full w-full gap-9">
             <p className="font-bold text-[25px] lg:text-[40px]">
               Got Question? Chat or Call
             </p>
