@@ -8,10 +8,16 @@ import cam from "@/assets/SVG/video.svg";
 export default function HeroSection() {
   return (
     <section className="flex flex-col lg:flex-row lg:justify-between justify-center lg:gap-4 w-full lg:items-center max-w-[1920px] h-full mx-auto lg:px-[100px] px-[20px] gap-7">
-      <div className="lg:mt-0 mt-16">
-        <h1 className="text-[48px] font-bold text-white">Start Investing</h1>
-        <span className="text-[48px] font-bold text-white mr-2">with</span>
-        <span className="text-[48px] font-bold text-[#F3D42D]">Confidence</span>
+      <div className="lg:mt-9 mt-[100px]">
+        <h1 className="lg:text-[48px] text-[40px] font-bold text-white">
+          Start Investing
+        </h1>
+        <span className="g:text-[48px] text-[40px] font-bold text-white mr-2">
+          with
+        </span>
+        <span className="g:text-[48px] text-[40px] font-bold text-[#F3D42D]">
+          Confidence
+        </span>
         <p className="text-[16px] text-white mt-4 w-[70%]">
           Explore top real estate opportunities or get personalized guidance
           from our experts.
