@@ -59,8 +59,8 @@ export default function PropertyDetails({
           </div>
         </div>
         {/* <PropertySlider /> */}
-        <PropertySliderTwo sliderImages={singleProperty?.sliderImages}/>
-        <div className="flex lg:flex-row flex-col my-10 w-full">
+        <PropertySliderTwo sliderImages={singleProperty?.sliderImages ?? []} />
+                <div className="flex lg:flex-row flex-col my-10 w-full">
           <PlansDetails singleProperty={singleProperty} />
           <div className="border-[1px] border-gray-200 rounded-md flex-grow h-[400px] flex flex-col p-5 shadow-md shadow-gray-300/30">
             <div className="py-1  rounded-[20px] bg-gray-200 mb-4 w-[100px] flex flex-row items-center gap-2">
