@@ -46,8 +46,8 @@ export default function PropertyDetails({
             </div>
             <div className="flex flex-col gap-1">
               <p className="text-[#002E5D] lg:text-2xl font-bold">
-                Apartment for sale in {decodeURIComponent(params.property)} with
-                2 Bedrooms
+                 {decodeURIComponent(params.property)} 
+                
               </p>
               <div className="flex items-center gap-1">
                 <Image src={location} alt="location" width={16} height={16} />
@@ -59,7 +59,7 @@ export default function PropertyDetails({
           </div>
         </div>
         {/* <PropertySlider /> */}
-        <PropertySliderTwo />
+        <PropertySliderTwo sliderImages={singleProperty?.sliderImages}/>
         <div className="flex lg:flex-row flex-col my-10 w-full">
           <PlansDetails singleProperty={singleProperty} />
           <div className="border-[1px] border-gray-200 rounded-md flex-grow h-[400px] flex flex-col p-5 shadow-md shadow-gray-300/30">
