@@ -14,56 +14,60 @@ export default function PropertySlider() {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
 
   return (
-    <div className="w-full h-[600px]  my-7 flex">
-      <div
-        className={`relative transition-all duration-500 ease-in-out ${
-          hoveredIndex !== null ? "w-[200px] grayscale" : "w-[45%]"
-        }  h-full`}
-      >
+    <div className="max-w-[1920px] mx-auto px-[20px] lg:px-[100px]">
+      <p className="text-[#8cc63f] font-bold">Offer we Love</p>
+      <p className="text-[#00152B] font-bold text-[36px]">Top Compounds</p>
+      <div className="w-full h-[600px]  my-7 flex">
         <div
-          className={`${
-            hoveredIndex === null ? "bg-transparent" : "bg-black/30"
-          } w-full absolute h-full z-10 top-0 left-0 rounded-l-lg transition-all ease-in-out duration-500`}
-        />
-        <Image
-          src={sliderImages[0]}
-          alt="Property image"
-          fill
-          className="object-cover rounded-l-lg"
-        />
-      </div>
-      {sliderImages.slice(1).map((image, index) => (
-        <div
-          key={index}
-          className={`relative h-full transition-all ease-in-out duration-500 ml-1 bg-white ${
-            hoveredIndex === index ? "w-[45%]" : "w-[200px] grayscale"
-          }`}
-          onMouseEnter={() => {
-            setHoveredIndex(index);
-          }}
-          onMouseLeave={() => setHoveredIndex(null)}
+          className={`relative transition-all duration-500 ease-in-out ${
+            hoveredIndex !== null ? "w-[200px] grayscale" : "w-[30%]"
+          }  h-full`}
         >
           <div
             className={`${
-              hoveredIndex === index ? "bg-transparent" : "bg-black/30"
-            } w-full absolute h-full z-10 top-0 left-0 transition-all ease-in-out duration-500`}
+              hoveredIndex === null ? "bg-transparent" : "bg-black/30"
+            } w-full absolute h-full z-10 top-0 left-0 rounded-lg transition-all ease-in-out duration-500`}
           />
           <Image
-            src={image}
-            alt={`Property image ${index + 1}`}
+            src={sliderImages[0]}
+            alt="Property image"
             fill
-            className="object-cover"
+            className="object-cover rounded-lg"
           />
         </div>
-      ))}
-      <div className="relative flex-grow max-w-[120px] h-full ml-1">
-        <div className="bg-black/30 w-full absolute h-full z-10 top-0 left-0 rounded-r-lg" />
-        <Image
-          src={sliderImages[0]}
-          alt={`Property imag`}
-          fill
-          className="object-cover rounded-r-lg grayscale"
-        />
+        {sliderImages.slice(1).map((image, index) => (
+          <div
+            key={index}
+            className={`relative h-full transition-all rounded-lg ease-in-out duration-500 ml-6 bg-white ${
+              hoveredIndex === index ? "w-[45%]" : "w-[250px] grayscale"
+            }`}
+            onMouseEnter={() => {
+              setHoveredIndex(index);
+            }}
+            onMouseLeave={() => setHoveredIndex(null)}
+          >
+            <div
+              className={`${
+                hoveredIndex === index ? "bg-transparent" : "bg-black/30"
+              } w-full absolute h-full z-10 top-0 left-0 rounded-lg transition-all ease-in-out duration-500`}
+            />
+            <Image
+              src={image}
+              alt={`Property image ${index + 1}`}
+              fill
+              className="object-cover rounded-lg"
+            />
+          </div>
+        ))}
+        {/* <div className="relative flex-grow max-w-[120px] h-full ml-1">
+          <div className="bg-black/30 w-full absolute h-full z-10 top-0 left-0 rounded-r-lg" />
+          <Image
+            src={sliderImages[0]}
+            alt={`Property imag`}
+            fill
+            className="object-cover rounded-r-lg grayscale"
+          />
+        </div> */}
       </div>
     </div>
   );

@@ -66,25 +66,25 @@ export default function PropertyCard({
 
         {/* Top Section */}
         <div className="absolute flex justify-between w-full left-0 top-3 z-20">
-        <div className="bg-white py-1 px-2 ml-2 rounded-[20px] flex flex-row items-center gap-2">
-        <div className="bg-[#A32832] w-5 h-5 rounded-full flex justify-center items-center">
-        <Image src={status} alt="Bedrooms" width={10} height={10} />
-        </div>
+          <div className="bg-white py-1 px-2 ml-2 rounded-[20px] flex flex-row items-center gap-2">
+            <div className="bg-[#A32832] w-5 h-5 rounded-full flex justify-center items-center">
+              <Image src={status} alt="Bedrooms" width={10} height={10} />
+            </div>
             <p className="text-red-500 text-[12px]">{investmentStatus}</p>
           </div>
           <div className="flex items-center gap-2 pr-2">
             <button className="w-[24px] h-[24px] bg-white rounded-full flex justify-center items-center">
-            <Image src={heart} alt="Bedrooms" width={16} height={16} />
+              <Image src={heart} alt="Bedrooms" width={16} height={16} />
             </button>
             <button className="w-[24px] h-[24px] bg-white rounded-full flex justify-center items-center">
-            <Image src={share} alt="Bedrooms" width={16} height={16} />
+              <Image src={share} alt="Bedrooms" width={16} height={16} />
             </button>
           </div>
         </div>
 
         {/* Bottom Section */}
         <div className="absolute flex justify-between w-full left-0 bottom-3 z-20 h-10">
-        <div className="bg-white px-2 ml-2 rounded-[8px] flex flex-row items-center gap-2">
+          <div className="bg-white px-2 ml-2 rounded-[8px] flex flex-row items-center gap-2">
             <Image src={DeveloperLogo} alt="logo" width={95} height={30} />
           </div>
           <div className="pr-2">
@@ -150,25 +150,21 @@ export default function PropertyCard({
               | {Price.yearsOfInstallment} years
             </span>
           </div>
-
-
-        
         </div>
         <div className="flex flex-col lg:flex-row justify-between gap-2 ">
-          <button className="h-[32px] w-[100px] lg:w-[100px] flex items-center justify-center gap-1 bg-[#F1F5FA] text-[#002E5D] rounded-md mt-3">
+          {/* <button className="h-[32px] w-[100px] lg:w-[100px] flex items-center justify-center gap-1 bg-[#F1F5FA] text-[#002E5D] rounded-md mt-3">
             <Image src={mail} alt="Mail" width={14} height={11} />
             Mail
-          </button>
-          <button className="h-[32px] w-[100px] flex items-center justify-center gap-1 bg-[#F1F5FA] text-[#002E5D] rounded-md mt-3">
+          </button> */}
+          <button className="h-[32px] w-[48%] flex items-center justify-center gap-1 bg-[#F1F5FA] text-[#002E5D] rounded-md mt-3">
             <Image src={phone} alt="Call" width={14} height={11} />
             Call
           </button>
-          <button className="h-[32px] min-w-[100px] flex items-center justify-center gap-1 bg-[#F1F5FA] text-[#002E5D] rounded-md mt-3">
+          <button className="h-[32px] min-w-[48%] flex items-center justify-center gap-1 bg-[#25D366] text-[#fff] rounded-md mt-3">
             <Image src={whats} alt="WhatsApp" width={14} height={11} />
             WhatsApp
           </button>
         </div>
-      
       </div>
     </div>
   );

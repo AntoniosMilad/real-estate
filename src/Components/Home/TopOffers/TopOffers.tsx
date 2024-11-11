@@ -5,8 +5,11 @@ import { properties, Property } from "@/data/properties";
 export default function TopOffers() {
   return (
     <section className="px-[20px] w-full h-auto my-[50px] lg:my-[117px] lg:px-[100px] max-w-[1920px] mx-auto">
+      <p className="text-[#8cc63f] font-bold">Offer we Love</p>
       <div className="mb-[32px] h-[76px] flex items-center ">
-        <h3 className="text-[#00152B] text-[36px] font-bold">Offers we love</h3>
+        <h3 className="text-[#00152B] text-[36px] font-bold">
+          Popular Property
+        </h3>
       </div>
       <div className="grid grid-cols-[repeat(auto-fill,minmax(350px,1fr))] gap-5 mb-5 min-h-[30vh]">
         {properties.map((property: Property, idx: number) => {

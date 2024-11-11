@@ -24,7 +24,7 @@ export default function TopDevelopers() {
   ];
 
   return (
-    <section className="bg-[#F1F5FA] w-full min-h-[360px] h-auto  py-10 ">
+    <section className=" w-full min-h-[360px] h-auto  py-10 ">
       <div className="max-w-[1920px] mx-auto px-[20px] lg:px-[100px]">
         <p className="text-[#00152B] font-bold text-[36px]">Top Developers</p>
         <div className="mt-10 flex justify-center flex-wrap gap-2 ">
@@ -32,7 +32,7 @@ export default function TopDevelopers() {
             return (
               <div
                 key={idx}
-                className="bg-white lg:w-[172px] h-[90px] px-1 flex justify-center items-center rounded-md hover:shadow-md hover:shadow-gray-400/30 m-2 transition-shadow duration-200 ease-linear"
+                className="bg-[#f2f2f2] lg:w-[172px] h-[90px] px-1 flex justify-center items-center rounded-md hover:shadow-md hover:shadow-gray-400/30 m-2 transition-shadow duration-200 ease-linear"
               >
                 <Image src={el.src} alt={el.src} width={140} height={32} />
               </div>
