@@ -6,7 +6,7 @@ export default function PlansDetails(props: {
 }) {
   return (
     <section className="flex flex-col gap-6 w-full lg:w-[80%]">
-      <article className="flex lg:flex-row flex-col gap-6 ">
+      {/* <article className="flex lg:flex-row flex-col gap-6 ">
         <div className="border-[1px] border-gray-200 rounded-md w-full lg:w-[15%] h-[255px] flex flex-col items-center py-5">
           <p className="text-[#002E5D] text-[18px] font-bold">Payment Plans</p>
           <div className="flex flex-col gap-3 mt-3">
@@ -64,12 +64,11 @@ export default function PlansDetails(props: {
             </ol>
           </div>
         </div>
-      </article>
+      </article> */}
       <article>
         <p className="text-[#002E5D] text-[18px] font-bold">About Apartment</p>
         <p className="my-3 w-full lg:w-[65%] text-black text-[15px] text-justify leading-[27px]">
-        {props.singleProperty?.AboutUnit}
-
+          {props.singleProperty?.AboutUnit}
         </p>
         {/* <p className="my-3 w-full lg:w-[65%] text-black text-[15px] text-justify leading-[27px] lg:line-clamp-none line-clamp-6">
           A 2 bedroom Apartment in ZED by Ora Developers. The Apartment size is
