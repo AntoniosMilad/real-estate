@@ -20,7 +20,7 @@ export default function PropertySlider() {
       <div className="w-full h-[600px]  my-7 flex">
         <div
           className={`relative transition-all duration-500 ease-in-out ${
-            hoveredIndex !== null ? "w-[200px] grayscale" : "w-[30%]"
+            hoveredIndex !== null ? "w-[250px] grayscale" : "w-[40%]"
           }  h-full`}
         >
           <div
@@ -34,6 +34,29 @@ export default function PropertySlider() {
             fill
             className="object-cover rounded-lg"
           />
+          {hoveredIndex === null ? (
+            <>
+              <div className="absolute top-[0px] right-[20px]">
+                <button className="lg:w-[100px] lg:h-[100px]  w-[150px] font-medium h-[48px] border-[1px] text-[#002E5D] border-white flex justify-center items-center bg-white rounded-full mt-[32px]">
+                  Explore More
+                </button>
+              </div>
+              <div className="absolute bottom-[50px] left-[15px]">
+                <p className="">Salt in Ras El Hekma by Tatweer Misr</p>
+                <p className="">45 Property</p>
+                <button className="lg:w-[200px] w-[150px] font-medium h-[48px] border-[1px] text-[#002E5D] border-white flex justify-center items-center bg-white rounded-md mt-[32px]">
+                  Explore More
+                </button>
+              </div>
+            </>
+          ) : (
+            <div className="absolute bottom-[20px] right-[23%]">
+              <button className="lg:w-[100px] lg:h-[100px]  w-[150px] font-medium h-[48px] border-[1px] text-[#002E5D] border-white flex justify-center items-center bg-white rounded-full mt-[32px]">
+                Explore More
+              </button>
+              <p className="my-2">45 Property</p>
+            </div>
+          )}
         </div>
         {sliderImages.slice(1).map((image, index) => (
           <div
@@ -57,6 +80,29 @@ export default function PropertySlider() {
               fill
               className="object-cover rounded-lg"
             />
+            {hoveredIndex !== index ? (
+              <div className="absolute bottom-[20px] right-[65px]">
+                <button className="lg:w-[100px] lg:h-[100px] w-[150px] font-medium h-[48px] border-[1px] text-[#002E5D] border-white flex justify-center items-center bg-white rounded-full mt-[32px]">
+                  Explore More
+                </button>
+                <p className="my-2">45 Property</p>
+              </div>
+            ) : (
+              <>
+                <div className="absolute top-[0px] right-[20px]">
+                  <button className="lg:w-[100px] lg:h-[100px]  w-[150px] font-medium h-[48px] border-[1px] text-[#002E5D] border-white flex justify-center items-center bg-white rounded-full mt-[32px]">
+                    Explore More
+                  </button>
+                </div>
+                <div className="absolute bottom-[50px] left-[15px]">
+                  <p className="">Salt in Ras El Hekma by Tatweer Misr</p>
+                  <p className="">45 Property</p>
+                  <button className="lg:w-[200px] w-[150px] font-medium h-[48px] border-[1px] text-[#002E5D] border-white flex justify-center items-center bg-white rounded-md mt-[32px]">
+                    Explore More
+                  </button>
+                </div>
+              </>
+            )}
           </div>
         ))}
         {/* <div className="relative flex-grow max-w-[120px] h-full ml-1">
