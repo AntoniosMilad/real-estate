@@ -66,8 +66,8 @@ export default function PlansDetails(props: {
         </div>
       </article> */}
       <article>
-        <p className="text-[#002E5D] text-[18px] font-bold">About Apartment</p>
-        <p className="my-3 w-full lg:w-[65%] text-black text-[15px] text-justify leading-[27px]">
+        <p className="text-[#002E5D] text-[24px] font-bold">About Apartment</p>
+        <p className="my-3 w-full lg:w-[75%] text-black text-[15px] text-justify leading-[27px]">
           {props.singleProperty?.AboutUnit}
         </p>
         {/* <p className="my-3 w-full lg:w-[65%] text-black text-[15px] text-justify leading-[27px] lg:line-clamp-none line-clamp-6">
