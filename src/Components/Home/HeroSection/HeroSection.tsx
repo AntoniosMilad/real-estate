@@ -10,7 +10,7 @@ import realTwo from "@/assets/IMG_7502.png";
 export default function HeroSection() {
   return (
     <section className="flex relative flex-col lg:flex-row lg:justify-between justify-center lg:gap-4 w-full lg:items-center max-w-[1920px] h-full mx-auto lg:px-[100px] px-[20px] gap-7">
-      <div className="lg:mt-[100px] mt-[20px] z-10">
+      <div className="lg:mt-[100px] mt-[80px] z-10">
         <h1 className="lg:text-[48px] text-[40px] font-bold text-[#001F38] ">
           Unlock wealth by investing in
         </h1>

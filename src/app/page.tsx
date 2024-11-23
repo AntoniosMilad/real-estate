@@ -12,7 +12,7 @@ import React from "react";
 export default function Home() {
   return (
     <>
-      <section className="w-screen h-[70dvh] lg:h-[750px] bg-white flex items-center">
+      <section className="w-screen h-[75dvh] lg:h-[750px] bg-white flex items-center">
         <Navbar />
         <HeroSection />
       </section>
