@@ -20,7 +20,7 @@ function DetailsButton({
   label: string;
 }) {
   return (
-    <button className="flex flex-col items-center min-w-[170px] gap-2 p-4 min-h-[100px] bg-[#E8E9EB99] rounded-lg shadow-sm hover:shadow-md transition">
+    <button className="flex flex-col items-center min-w-full lg:min-w-[170px] gap-2 p-4 min-h-[100px] bg-[#E8E9EB99] rounded-lg shadow-sm hover:shadow-md transition">
       <div className="bg-white w-full min-h-[60px] flex justify-center items-center rounded-lg">
         {children}
       </div>
@@ -116,7 +116,7 @@ export default function PropertyDetails({
             </p>
             <div className="flex lg:gap-8 gap-2 my-8">
               <div className="bg-gray-100 w-[48%] lg:w-[40%] rounded-lg shadow-sm">
-                <h3 className="text-lg font-semibold  text-gray-700 p-4">
+                <h3 className="lg:text-lg text-sm font-semibold  text-gray-700 p-4">
                   About Property
                 </h3>
                 <ul className="text-sm text-gray-600">
@@ -147,8 +147,8 @@ export default function PropertyDetails({
                 </ul>
               </div>
 
-              <div className="bg-gray-100  flex-grow lg:w-[40%] rounded-lg shadow-sm">
-                <h3 className="text-lg font-semibold  text-gray-700 p-4">
+              <div className="bg-gray-100 w-[48%] lg:w-[40%] rounded-lg shadow-sm">
+                <h3 className="lg:text-lg text-sm font-semibold  text-gray-700 p-4">
                   Details Overview
                 </h3>
                 <ul className="text-sm text-gray-600">

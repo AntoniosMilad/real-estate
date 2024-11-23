@@ -3,6 +3,7 @@ import React from "react";
 import Image from "next/image";
 import logo from "@/assets/Screenshot_2024-10-06_at_9.40.48_am-removebg-preview.png";
 import { useState } from "react";
+import Link from "next/link";
 
 export default function Navbar() {
   const [isPropertiesOpen, setIsPropertiesOpen] = useState(false);
@@ -12,9 +13,11 @@ export default function Navbar() {
     <nav className="bg-gray-50 shadow-sm shadow-gray-400/25 z-50 text-black fixed top-0 left-0 w-full">
       <div className="flex items-center justify-between px-6 lg:px-[100px] h-[80px] max-w-[1920px] mx-auto">
         {/* Logo */}
-        <div className="flex items-center space-x-6">
-          <Image src={logo} alt="logo" width={95} height={30} />
-        </div>
+        <Link href={"/"}>
+          <div className="flex items-center space-x-6">
+            <Image src={logo} alt="logo" width={95} height={30} />
+          </div>
+        </Link>
 
         {/* Navigation Links */}
         <div className="hidden lg:flex items-center space-x-6 text-sm font-medium">
@@ -90,13 +93,13 @@ export default function Navbar() {
         {/* Right Section */}
         <div className="flex items-center space-x-4">
           {/* Language Toggle */}
-          <button className="flex items-center space-x-1 text-gray-800 hover:text-gray-600">
+          <button className="lg:flex hidden items-center space-x-1 text-gray-800 hover:text-gray-600">
             <span className="material-icons text-green-600">language</span>
             <span className="text-sm">العربية</span>
           </button>
 
           {/* Free Consultation Button */}
-          <button className="lg:w-[200px] w-[150px] font-medium h-[48px] border-[1px] border-white text-white flex justify-center items-center bg-[#002E5D] rounded-md">
+          <button className="lg:w-[200px] w-[160px] font-medium h-[48px] border-[1px] px-1 border-white text-white flex justify-center items-center bg-[#002E5D] rounded-md">
             Free Consultation
           </button>
         </div>

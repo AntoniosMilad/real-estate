@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import React, { useState } from "react";
-
+import dev from "@/assets/Developer Logos/01.png";
 export default function PropertySlider() {
   const sliderImages = [
     "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
@@ -40,7 +40,7 @@ export default function PropertySlider() {
             <>
               <div className="absolute top-[0px] right-[20px]">
                 <button className="lg:w-[100px] lg:h-[100px] h-[60px] w-[60px] font-medium  border-[1px] text-[#002E5D] border-white flex justify-center items-center bg-white rounded-full mt-[32px]">
-                  More
+                  <Image src={dev.src} alt="dev" width={90} height={90} />
                 </button>
               </div>
               <div className="absolute bottom-3 lg:bottom-[50px] left-[15px]">
@@ -56,7 +56,7 @@ export default function PropertySlider() {
           ) : (
             <div className="absolute lg:bottom-[20px] bottom-[100px] right-[30%] lg:right-[23%] z-10">
               <button className="lg:w-[100px] lg:h-[100px] h-[60px] w-[60px] font-medium  border-[1px] text-[#002E5D] border-white flex justify-center items-center bg-white rounded-full mt-[32px]">
-                More
+                <Image src={dev.src} alt="dev" width={90} height={90} />
               </button>
               <p className="my-2">45 Property</p>
             </div>
@@ -89,7 +89,7 @@ export default function PropertySlider() {
             {hoveredIndex !== index ? (
               <div className="absolute lg:bottom-[20px] bottom-[100px] right-[30%] lg:right-[65px] z-10">
                 <button className="lg:w-[100px] lg:h-[100px] h-[60px] w-[60px] font-medium  border-[1px] text-[#002E5D] border-white flex justify-center items-center bg-white rounded-full mt-[32px]">
-                  More
+                  <Image src={dev.src} alt="dev" width={90} height={90} />
                 </button>
                 <p className="my-2">45 Property</p>
               </div>
@@ -97,7 +97,7 @@ export default function PropertySlider() {
               <>
                 <div className="absolute top-[0px] right-[20px]">
                   <button className="lg:w-[100px] lg:h-[100px] h-[60px] w-[60px] font-medium  border-[1px] text-[#002E5D] border-white flex justify-center items-center bg-white rounded-full mt-[32px]">
-                    More
+                    <Image src={dev.src} alt="dev" width={90} height={90} />
                   </button>
                 </div>
                 <div className="absolute bottom-3 lg:bottom-[50px] left-[15px]">

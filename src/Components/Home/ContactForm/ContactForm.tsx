@@ -44,7 +44,7 @@ export default function ContactForm() {
 
   return (
     <section className="bg-[#2B3D56] mb-10 flex items-center justify-between p-10 w-full max-w-[1920px] mx-auto px-[20px] lg:px-[100px]">
-      <div className="grid lg:grid-cols-2 gap-10 w-full text-white">
+      <div className="grid lg:grid-cols-2 grid-cols-1 gap-10 w-full text-white">
         {/* Left Text Section */}
         <div className="space-y-4 flex flex-col justify-center">
           <p className="text-green-500 font-medium">
@@ -58,7 +58,10 @@ export default function ContactForm() {
         </div>
 
         {/* Right Form Section */}
-        <form onSubmit={handleSubmit} className="p-8 text-gray-700 space-y-4">
+        <form
+          onSubmit={handleSubmit}
+          className="lg:p-8 text-gray-700 space-y-4"
+        >
           <input
             type="text"
             name="name"
