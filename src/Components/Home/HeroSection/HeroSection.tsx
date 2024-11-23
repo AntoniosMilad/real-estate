@@ -5,19 +5,19 @@ import zeroIcon from "@/assets/SVG/Zero.svg";
 import priceLevel from "@/assets/SVG/Pricelevel.svg";
 import cam from "@/assets/SVG/video.svg";
 import realone from "@/assets/rb_208 1.png";
-import realTwo from "@/assets/Untitled design.png";
+import realTwo from "@/assets/IMG_7502.png";
 
 export default function HeroSection() {
   return (
     <section className="flex relative flex-col lg:flex-row lg:justify-between justify-center lg:gap-4 w-full lg:items-center max-w-[1920px] h-full mx-auto lg:px-[100px] px-[20px] gap-7">
-      <div className="lg:mt-[100px] mt-[100px] z-10">
-        <h1 className="lg:text-[48px] text-[40px] font-bold text-[#001F38]">
+      <div className="lg:mt-[100px] mt-[20px] z-10">
+        <h1 className="lg:text-[48px] text-[40px] font-bold text-[#001F38] ">
           Unlock wealth by investing in
         </h1>
-        <span className="g:text-[48px] text-[40px] font-bold text-[#8CC63F] mr-2">
+        <span className="lg:text-[48px] text-[40px] font-bold text-[#8CC63F] mr-2 ">
           Fyndly real estate!
         </span>
-        <p className="text-[16px] text-[#001F38] mt-4 w-[70%]">
+        <p className="text-[16px] text-[#001F38] mt-4 w-full lg:w-[70%] ">
           Explore top real estate opportunities or get personalized guidance
           from our experts.
         </p>
@@ -44,7 +44,7 @@ export default function HeroSection() {
         </div>
       </div>
 
-      <div className="absolute right-0 w-[800px] h-[100%] top-[20px]">
+      <div className="absolute right-0 w-[950px] h-[100%] top-[50px] lg:block hidden">
         <Image src={realTwo.src} fill alt="hero" className="object-contain" />
       </div>
     </section>

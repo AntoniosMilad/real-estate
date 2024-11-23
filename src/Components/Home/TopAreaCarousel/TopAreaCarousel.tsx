@@ -93,16 +93,19 @@ const TopAreasCarousel = () => {
         slidesPerView={1.5}
         pagination={{ clickable: true }}
         breakpoints={{
+          0: {
+            slidesPerView: 1,
+          },
           1024: {
             slidesPerView: 2.5,
           },
         }}
-        className="!p-4"
+        className="!p-4 w-full"
       >
         {topAreas.map((area, index) => (
           <SwiperSlide
             key={index}
-            className="rounded-lg shadow-md shadow-gray-300/20 overflow-hidden !w-[35%]"
+            className="rounded-lg shadow-md shadow-gray-300/20 overflow-hidden !w-full  lg:!w-[35%]"
           >
             <div className="relative">
               <img

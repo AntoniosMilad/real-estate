@@ -151,7 +151,7 @@ export default function PropertyCard({
             </span>
           </div>
         </div>
-        <div className="flex flex-col lg:flex-row justify-between gap-2 ">
+        <div className="flex flex-row justify-between gap-2 ">
           {/* <button className="h-[32px] w-[100px] lg:w-[100px] flex items-center justify-center gap-1 bg-[#F1F5FA] text-[#002E5D] rounded-md mt-3">
             <Image src={mail} alt="Mail" width={14} height={11} />
             Mail

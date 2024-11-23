@@ -17,11 +17,13 @@ export default function PropertySlider() {
     <div className="max-w-[1920px] mx-auto px-[20px] lg:px-[100px]">
       <p className="text-[#8cc63f] font-bold">Offer we Love</p>
       <p className="text-[#00152B] font-bold text-[36px]">Top Compounds</p>
-      <div className="w-full h-[600px]  my-7 flex">
+      <div className="w-full h-full  lg:h-[600px]  my-7 flex lg:flex-row flex-col lg:gap-0 gap-3">
         <div
           className={`relative transition-all duration-500 ease-in-out ${
-            hoveredIndex !== null ? "w-[250px] grayscale" : "w-[40%]"
-          }  h-full`}
+            hoveredIndex !== null
+              ? "lg:w-[250px] w-[70%] grayscale"
+              : "w-full lg:w-[40%]"
+          }  lg:h-full h-[300px]`}
         >
           <div
             className={`${
@@ -37,22 +39,24 @@ export default function PropertySlider() {
           {hoveredIndex === null ? (
             <>
               <div className="absolute top-[0px] right-[20px]">
-                <button className="lg:w-[100px] lg:h-[100px]  w-[150px] font-medium h-[48px] border-[1px] text-[#002E5D] border-white flex justify-center items-center bg-white rounded-full mt-[32px]">
-                  Explore More
+                <button className="lg:w-[100px] lg:h-[100px] h-[60px] w-[60px] font-medium  border-[1px] text-[#002E5D] border-white flex justify-center items-center bg-white rounded-full mt-[32px]">
+                  More
                 </button>
               </div>
-              <div className="absolute bottom-[50px] left-[15px]">
-                <p className="">Salt in Ras El Hekma by Tatweer Misr</p>
-                <p className="">45 Property</p>
-                <button className="lg:w-[200px] w-[150px] font-medium h-[48px] border-[1px] text-[#002E5D] border-white flex justify-center items-center bg-white rounded-md mt-[32px]">
+              <div className="absolute bottom-3 lg:bottom-[50px] left-[15px]">
+                <p className="bg-opacity-40 bg-black p-1">
+                  Salt in Ras El Hekma by Tatweer Misr
+                </p>
+                <p className="bg-opacity-40 bg-black p-1">45 Property</p>
+                <button className="lg:w-[200px] w-[120px] font-medium h-[35px] lg:h-[48px] lg:px-0 px-2 border-[1px] lg:text-base text-sm text-[#002E5D] border-white flex justify-center items-center bg-white rounded-md mt-2 lg:mt-[32px]">
                   Explore More
                 </button>
               </div>
             </>
           ) : (
-            <div className="absolute bottom-[20px] right-[23%]">
-              <button className="lg:w-[100px] lg:h-[100px]  w-[150px] font-medium h-[48px] border-[1px] text-[#002E5D] border-white flex justify-center items-center bg-white rounded-full mt-[32px]">
-                Explore More
+            <div className="absolute lg:bottom-[20px] bottom-[100px] right-[30%] lg:right-[23%] z-10">
+              <button className="lg:w-[100px] lg:h-[100px] h-[60px] w-[60px] font-medium  border-[1px] text-[#002E5D] border-white flex justify-center items-center bg-white rounded-full mt-[32px]">
+                More
               </button>
               <p className="my-2">45 Property</p>
             </div>
@@ -61,8 +65,10 @@ export default function PropertySlider() {
         {sliderImages.slice(1).map((image, index) => (
           <div
             key={index}
-            className={`relative h-full transition-all rounded-lg ease-in-out duration-500 ml-6 bg-white ${
-              hoveredIndex === index ? "w-[45%]" : "w-[250px] grayscale"
+            className={`relative lg:h-full h-[300px] transition-all rounded-lg ease-in-out duration-500 ml-0 lg:ml-6 bg-white ${
+              hoveredIndex === index
+                ? "lg:w-[45%] w-full"
+                : "lg:w-[250px] w-[70%] grayscale"
             }`}
             onMouseEnter={() => {
               setHoveredIndex(index);
@@ -81,23 +87,25 @@ export default function PropertySlider() {
               className="object-cover rounded-lg"
             />
             {hoveredIndex !== index ? (
-              <div className="absolute bottom-[20px] right-[65px]">
-                <button className="lg:w-[100px] lg:h-[100px] w-[150px] font-medium h-[48px] border-[1px] text-[#002E5D] border-white flex justify-center items-center bg-white rounded-full mt-[32px]">
-                  Explore More
+              <div className="absolute lg:bottom-[20px] bottom-[100px] right-[30%] lg:right-[65px] z-10">
+                <button className="lg:w-[100px] lg:h-[100px] h-[60px] w-[60px] font-medium  border-[1px] text-[#002E5D] border-white flex justify-center items-center bg-white rounded-full mt-[32px]">
+                  More
                 </button>
                 <p className="my-2">45 Property</p>
               </div>
             ) : (
               <>
                 <div className="absolute top-[0px] right-[20px]">
-                  <button className="lg:w-[100px] lg:h-[100px]  w-[150px] font-medium h-[48px] border-[1px] text-[#002E5D] border-white flex justify-center items-center bg-white rounded-full mt-[32px]">
-                    Explore More
+                  <button className="lg:w-[100px] lg:h-[100px] h-[60px] w-[60px] font-medium  border-[1px] text-[#002E5D] border-white flex justify-center items-center bg-white rounded-full mt-[32px]">
+                    More
                   </button>
                 </div>
-                <div className="absolute bottom-[50px] left-[15px]">
-                  <p className="">Salt in Ras El Hekma by Tatweer Misr</p>
-                  <p className="">45 Property</p>
-                  <button className="lg:w-[200px] w-[150px] font-medium h-[48px] border-[1px] text-[#002E5D] border-white flex justify-center items-center bg-white rounded-md mt-[32px]">
+                <div className="absolute bottom-3 lg:bottom-[50px] left-[15px]">
+                  <p className="bg-opacity-40 bg-black p-1">
+                    Salt in Ras El Hekma by Tatweer Misr
+                  </p>
+                  <p className="bg-opacity-40 bg-black p-1">45 Property</p>
+                  <button className="lg:w-[200px] w-[120px] font-medium h-[35px] lg:h-[48px] lg:px-0 px-2 border-[1px] lg:text-base text-sm text-[#002E5D] border-white flex justify-center items-center bg-white rounded-md mt-2 lg:mt-[32px]">
                     Explore More
                   </button>
                 </div>
